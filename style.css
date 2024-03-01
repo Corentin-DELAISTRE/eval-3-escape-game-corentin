@@ -1,0 +1,395 @@
+/*
+  font-family: "Teko", sans-serif;
+    font-family: "Roboto", sans-serif;
+*/
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --prim : #f2e2a7;
+    --sec : #0d0401;
+    --ter : #f2c012;
+    --lien :#212121;
+    --white : #ffffff;
+    --black:#000000;
+}
+body{
+    background-color: var(--prim);
+}
+h1{
+    font-family: "Teko", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--white);
+    width: 100%;
+}
+h2{
+    font-family: "Teko", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color:var(--black);
+    width: 100%;
+}
+h3{
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color:var(--black);
+    width: 100%;
+}
+a{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color:var(--lien);
+    background-color: var(--ter);
+    padding: 8px 35px;
+    text-decoration: none;
+    width: fit-content;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:var(--black);
+}
+.whitefont{
+    color: var(--white);
+}
+.yellowfont{
+    color: var(--ter);
+}
+.cont1200{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.spacebetween{
+    justify-content: space-between;
+}
+.spacevenly{
+    justify-content: space-evenly;
+}
+.justcenter{
+    justify-content: center;
+}
+.aligncenter{
+    align-items: center;
+}
+.textcenter{
+    text-align: center;
+}
+.flexcolumn{
+    flex-direction: column;
+}
+.w100{
+    width: 100%;
+}
+.mb10{
+    margin-bottom: 10rem;
+}
+/*HERO*/
+.hero{
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    background-position-x:50%;
+    height: 100vh;
+}
+.herocontent{
+    height: fit-content;
+    gap: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top:400px;
+}
+/*MISSIONS*/
+.missions{
+    margin-top: -140px;
+    padding-bottom: 140px;
+}
+.missioncard{
+    width: 27%;
+    height: fit-content;
+    background-color: var(--white);
+    gap: 50px;
+    padding: 10px 6px 20px 10px;
+}
+.missionimg img{
+    height: auto;
+}
+.missioncontent{
+    gap: 10px;
+}
+/*AVANTAGES*/
+.avantages{
+    background-color: #0d0401;
+    padding: 64px 0;
+}
+.avantagescard{
+    width: 25%;
+    gap: 24px;
+}
+/*DESCRIPITION*/
+.articleleft{
+    width:50%;
+    gap: 24px;
+}
+.articleleft p{
+    width: 80%;
+}
+.articleright{
+    width: 45%;
+}
+.articleright img{
+    border: solid var(--white) 10px;
+    width: 100%;
+    height: auto;
+}
+.detective{
+    box-shadow: 40px -40px var(--black);
+}
+.enigme{
+    box-shadow: -40px -40px var(--black);
+}
+/*AVIS CLIENTS*/
+.avisclient{
+    gap: 48px;
+}
+.cardavis{
+    width: 25%;
+    background-color: var(--white);
+    gap: 24px;
+    padding: 16px 18px 16px 18px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+}
+.profilimg{
+    width: 30%;
+}
+.profilimg img{
+    width: 100%;
+    height: auto;
+}
+.prenom-note{
+    width: 65%;
+    height: fit-content;
+}
+.prenom{
+    font-family: "Teko", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.note{
+    color: var(--ter);
+}
+/*FOOTER*/
+footer{
+    background-color: var(--sec);
+    color: var(--white);
+    padding: 5rem 0;
+}
+.footercontainer{
+    gap:100px;
+}
+footer h2, footer p{
+    color: white;
+}
+footer h2{
+    font-weight:400;
+    height: fit-content;
+}
+.footleft{
+    width: 30%;
+    gap:24px;
+}
+.footmid{
+    width: 32%;
+}
+.address img{
+    width: 32px;
+}
+
+address{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+.address{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+address a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+    font-size: 16px;
+    padding: 0;
+    background-color: transparent;
+}
+@media all and (max-width:580px){
+    /*GENERAL*/
+    .cont1200{
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    h2{
+        font-size: 30px;
+    }
+    /*HERO*/
+    h1{                                 
+        font-size: 2rem;
+    }
+    .hero{
+        background-size: cover;
+        background-position-x:50%;
+
+    }
+    a{font-size: 1rem;}
+    /*MISSION*/
+    .missions{
+        margin-top: 1rem;
+    }
+    .missioncard{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    /*AVANTAGES*/
+    .avantagescontent{
+        gap: 64px;
+    }
+    .avantagescard{
+        width: 100%;
+    }
+    /*DESCRIPTION*/
+    .articleleft{
+        width: 100%;
+    }
+    .articleright{
+        width: 100%;
+        box-shadow: none;
+    }
+    .articleright img{
+        border: solid var(--white) 5px;
+    }
+    .alldetective{
+        gap:2rem;
+    }
+    .allenigme{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    /*AVIS*/
+    .containercardavis{
+        gap: 32px;
+    }
+    .cardavis{
+        width: 100%;
+    }
+    /*FOOTER*/
+    .footcol{
+        width: 100%;
+        text-align: center;
+    }
+    .address{
+        justify-content: center;
+    }
+    .footmid{
+        gap: 32px;
+        line-height: 32px;
+    }
+}
+@media all and (min-width:580px ) and ( max-width :1200px){
+     /*GENERAL*/
+     .cont1200{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*HERO*/
+    h1{                                 
+        font-size: 3rem;
+    }
+    .hero{
+        background-size: cover;
+        background-position-x:50%;
+    }
+
+    /*MISSION*/
+    .missions{
+        margin-top: 1rem;
+        justify-content: center;
+        gap:24px;
+    }
+    .missioncard{
+        width: 45%;
+        margin-bottom: 1rem;
+    }
+    /*AVANTAGES*/
+    .avantagescontent{
+        gap: 64px;
+    }
+    .avantagescard{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .avantagescard img{
+        width: 100px;
+    }
+    /*DESCRIPTION*/
+    .articleleft{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .articleright{
+        width: 80%;
+        box-shadow: none;
+    }
+    .articleright img{
+        border: solid var(--white) 5px;
+    }
+    .alldetective{
+        gap:2rem;
+        justify-content: center;
+    }
+    .allenigme{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    /*AVIS*/
+    .avisclient h2{
+        text-align: center;
+    }
+    .containercardavis{
+        gap: 32px;
+        justify-content: center;
+    }
+    .cardavis{
+        width: 45%;
+    }
+    /*FOOTER*/
+    .footcol{
+        width: 40%;
+        text-align: center;
+    }
+    .address{
+        justify-content: center;
+    }
+    .footmid{
+        gap: 32px;
+    }
+}
