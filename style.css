@@ -108,7 +108,7 @@ p{
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top:400px;
+    top:50vh;
 }
 /*MISSIONS*/
 .missions{
@@ -257,6 +257,12 @@ address a{
         background-position-x:50%;
 
     }
+    .hero img{
+        display: none;
+    }
+    .herocontent{
+        gap:24px;
+    }
     a{font-size: 1rem;}
     /*MISSION*/
     .missions{
@@ -325,6 +331,12 @@ address a{
     .hero{
         background-size: cover;
         background-position-x:50%;
+    }
+    .hero img{
+        display: none;
+    }
+    .herocontent{
+        gap:24px;
     }
 
     /*MISSION*/
